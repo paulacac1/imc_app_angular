@@ -1,0 +1,11 @@
+<div>
+  <div
+    id="label_result"
+    [ngClass]="{
+      visibleFalse: resultValue <= 0,
+      visibleTrue: resultValue > 0
+    }"
+  >
+    Seu IMC é:<span [innerText]="formatValue()"></span>
+  </div>
+</div>
